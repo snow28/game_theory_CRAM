@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>CRAM game assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="./css/main.css" rel="stylesheet">
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+</head>
+
+<body>
+<noscript>Your browser does not support JavaScript! Please visit this <a href="https://www.enable-javascript.com/">page, where You can find info how to enable JS in all popular browsers</a></noscript>
+
+<main class="content-wrapper">
+
+    <div class="nav">
+        <p>CRAM game assistant</p>
+    </div>
+
+
+    <div class="select js-select ">
+        <p>Select names for players:</p>
+        <div class="select-names">
+            <input type="text" class="input js-player-1" placeholder="Vertical Player">
+            <input type="text" class="input js-player-2" placeholder="Horizontal Player">
+        </div>
+        <p>Game size :</p>
+        <div class="select-size">
+            <input type="text" class="js-size-x" placeholder="X">
+            <p>&nbsp;&nbsp;X&nbsp;&nbsp;</p>
+            <input type="text" class="js-size-y" placeholder="Y">
+        </div>
+        <p class="btn js-start-game">Start Game</p>
+    </div>
+
+
+
+    <div class="game-names  js-names-div hide">
+        <p class="game-names-1 js-name-1">Dmytro</p>
+        <p class="game-names-2 js-name-2">Vovchik</p>
+    </div>
+    <div class="game-names game-role hide  js-role-div">
+        <p class="game-small game-names-item current js-role">vertical</p>
+        <p class="game-small game-names-item js-role">horizontal</p>
+    </div>
+
+
+    <div class="game  js-game hide">
+
+
+        <!--<div class="game-row">
+            <div class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div>
+            <div class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div>
+            <div class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div>
+            <div class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div>
+            <div class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div>
+        </div> -->
+
+        <!--<div data-y="0" class="game-row"><div data-x="0" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="1" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="2" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="3" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="4" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div></div><div data-y="1" class="game-row"><div data-x="0" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="1" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="2" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="3" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="4" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div></div><div data-y="2" class="game-row"><div data-x="0" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="1" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="2" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="3" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="4" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div></div><div data-y="3" class="game-row"><div data-x="0" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="1" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="2" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="3" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="4" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div></div><div data-y="4" class="game-row"><div data-x="0" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="1" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="2" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="3" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div><div data-x="4" class="game-cell js-cell"><i class="fa fa-arrow-circle-down hide top"></i><i class="fa fa-arrow-circle-right hide right"></i></div></div>
+-->
+
+    </div>
+
+
+</main>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+<script id="__bs_script__">//<![CDATA[
+document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+</body>
+
+</html>

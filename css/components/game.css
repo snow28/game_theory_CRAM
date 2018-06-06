@@ -1,0 +1,19 @@
+.game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .game-row {
+    display: flex; }
+  .game-cell {
+    border: 2px solid black;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; }
+
+/*# sourceMappingURL=game.css.map */

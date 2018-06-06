@@ -1,0 +1,219 @@
+.game {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .game-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .game-cell {
+    border: 2px solid black;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 30px; }
+  .game-names {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    font-weight: 500; }
+    .game-names-1, .game-names-2 {
+      width: 250px;
+      text-align: center; }
+    .game-names-item {
+      width: 250px;
+      text-align: center; }
+  .game-small {
+    font-size: 10px; }
+  .game-role {
+    margin-top: -70px; }
+
+.current {
+  color: red;
+  font-weight: 500;
+  font-size: 12px; }
+
+.select {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .select-names {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .select-names input {
+      margin-left: 20px;
+      margin-right: 20px; }
+  .select-size {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .select-size input {
+      width: 30px;
+      height: 30px;
+      text-align: center; }
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid black; }
+
+.logging {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px; }
+  .logging-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .logging-button .current {
+      background-color: black;
+      color: white; }
+  .logging-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .logging-block input {
+      width: 250px; }
+  .logging .login {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    border-color: gray; }
+  .logging .register {
+    font-weight: 700;
+    border: 2px solid black; }
+
+.end {
+  width: 100%;
+  text-align: center; }
+  .end a {
+    color: black;
+    margin-top: 15px;
+    display: block;
+    margin: auto; }
+
+a {
+  text-decoration: none; }
+
+ul li {
+  list-style-type: none; }
+
+.btn {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: black;
+    color: white; }
+
+.input {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 30px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .input::-webkit-input-placeholder {
+    font-weight: 500; }
+  .input:-ms-input-placeholder {
+    font-weight: 500; }
+  .input::-ms-input-placeholder {
+    font-weight: 500; }
+  .input::placeholder {
+    font-weight: 500; }
+  .input:focus {
+    outline: none; }
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden; }
+
+.hide {
+  display: none; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.error {
+  width: 600px;
+  margin: auto;
+  font-weight: 500;
+  color: red; }
+
+.disable {
+  pointer-events: none; }
+
+.content-wrapper {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 110px; }
+
+/*# sourceMappingURL=main.css.map */

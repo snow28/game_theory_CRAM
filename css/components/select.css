@@ -1,0 +1,20 @@
+.select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .select-names {
+    display: flex; }
+    .select-names input {
+      margin-left: 20px;
+      margin-right: 20px; }
+  .select-size {
+    display: flex;
+    align-items: center; }
+    .select-size input {
+      width: 30px;
+      height: 30px;
+      text-align: center; }
+
+/*# sourceMappingURL=select.css.map */

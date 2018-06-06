@@ -1,0 +1,26 @@
+.logging {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px; }
+  .logging-button {
+    display: flex;
+    justify-content: center; }
+    .logging-button .current {
+      background-color: black;
+      color: white; }
+  .logging-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .logging-block input {
+      width: 250px; }
+  .logging .login {
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    border-color: gray; }
+  .logging .register {
+    font-weight: 700;
+    border: 2px solid black; }
+
+/*# sourceMappingURL=logging.css.map */
